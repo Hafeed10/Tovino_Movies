@@ -125,7 +125,7 @@ header.shadow .logo{
   justify-content:center;
 }
 .menu1 .toggle{
-  position: fixed;
+  /* position: fixed; */
   position:relative;
   height:60px;
   width:60px;
@@ -764,7 +764,15 @@ input[type=text], input[type=password] {
         background: #162962;
        
     }
+    .menu1{
+      margin-left: 50px;
+    }
+    .menu1 .toggle{
+      text-align: center;
+      margin-left: -10px;
+    }
 }
+
 
 @media (max-width:370px){
    header{
@@ -798,6 +806,7 @@ input[type=text], input[type=password] {
     margin-left: 30px;
     
   }
+  
 }
  /* Change styles for span and cancel button on extra small screens */
  @media screen and (max-width: 300px) {
