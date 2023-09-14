@@ -756,6 +756,12 @@ input[type=text], input[type=password] {
        
     }
 }
+@media (max-width:414px){
+  .menu1 .toggle{
+    text-align: center;
+    margin-left: 10px;
+  }
+}
 @media (max-width:400px){
     .newsletter{
         width: 100%;
