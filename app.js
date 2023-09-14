@@ -158,3 +158,10 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+const menu1 =document.querySelector(".menu1");
+const toggle=document.querySelector(".toggle");
+toggle.addEventListener("click",()=>{
+  menu1.classList.toggle("active1");
+})
+
