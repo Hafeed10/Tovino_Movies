@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+     <!-- Demo styles -->
+     <link rel="icon" sizes="32x32" href="imag/images (6).jpg">
+    <title>Tovino_thomas Movies.</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <ion-icon name="film-outline" style="color: rgb(51, 24, 227);"></ion-icon>MOVIES
+        </a>
+        <div class="bx bx-menu" id="menu-icon">
+          <ion-icon name="menu-outline"></ion-icon> 
+        </div>
+        <ul class="navbar ">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"  class="btn">Sign In</button>
+    
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="imag/anime-6204734_1280 (1).webp" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="max-container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="loop-container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        <button class="chatbot-toggler">
+            <span class="material-symbols-rounded">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <div class="chatbot">
+            <header>
+              <h2>Chatbot</h2>
+              <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+              <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there 👋<br>How are you</p>
+              </li>
+            </ul>
+            <div class="chat-input">
+              <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+              <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+          </div>
+    </header>
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="imag/tovino-thomas-forensic.jpg" alt="">
+                <div class="home-text">
+                    <span>Movies</span>
+                    <h1>Forensic:Movies<br> Be Carnage</h1>
+                    <a href="#" class="btn">Book Now</a>
+                    <a href="#" class="play"><ion-icon name="play-outline"class="bx bx-play"></ion-icon></a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="imag/1008580866_2018-exclusive.jpg" alt="">
+                <div class="home-text">
+                    <span>Movies</span>
+                    <h1>2018:Movies <br>Far from Home</h1>
+                    <a href="#" class="btn">Book Now</a>
+                    <a href="#" class="play"><ion-icon name="play-outline"class="bx bx-play"></ion-icon></a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="imag/image.jpg" alt="">
+                <div class="home-text">
+                    <span>Movies</span>
+                    <h1>Kalki:Movies<br>Far from Home</h1>
+                    <a href="#" class="btn">Book Now</a>
+                    <a href="#" class="play"><ion-icon name="play-outline"class="bx bx-play"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+          <div class="swiper-pagination "></div>
+    </section>
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                 <!-- box 1 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/image.jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas </h3>
+                    <span>120 min |Thrillern</span>
+                </div>
+                 <!-- box 2 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/images (1).jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas </h3>
+                    <span>120 min |Thriller</span>
+                </div>
+                 <!-- box 3 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/images (2).jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas </h3>
+                    <span>120 min | Thriller</span>
+                </div>
+                 <!-- box 4 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/images (3).jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas</h3>
+                    <span>120 min | Thriller Movie</span>
+                </div>
+                 <!-- box 5 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/images (4).jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas</h3>
+                    <span>120 min |Thriller</span>
+                </div>
+                 <!-- box 6 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/images (5).jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas</h3>
+                    <span>120 min |Thriller</span>
+                </div>
+                 <!-- box 7 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/images (6).jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas</h3>
+                    <span>120 min |Thriller</span>
+                </div>
+                 <!-- box 8 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/images(8).jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas</h3>
+                    <span>120 min |Thriller</span>
+                </div>
+                 <!-- box 9 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/Kaanekkaane_Movie_review_Sony_LIV_Tovino_Thomas_Suraj_Venjaramoodu.webp" alt="">
+                    </div>
+                    <h3>Tovino Thomas</h3>
+                    <span>120 min |Thriller</span>
+                </div>
+                 <!-- box 10 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="imag/Where-To-Watch-These-6-Must-Watch-Tovino-Thomas-Films.jpg" alt="">
+                    </div>
+                    <h3>Tovino Thomas</h3>
+                    <span>120 min |Thriller</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="movies" id="movies">
+        <h2 class="heading">Opening This Week</h2>
+        <div class="movies-container">
+            <div class="box">
+            <div class="box-img">
+                <img src="imag/90620606.webp" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min | Action</span>
+        </div>
+        <!-- box 1 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="imag/100614407.webp" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min | Action</span>
+        </div>
+        <!-- colse -->
+         <!-- box 2 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="imag/kala-review-3.jpg" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min | Action</span>
+        </div>
+         <!-- box 3 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="imag/Kaanekkaane.jpeg" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min |  Action</span>
+        </div>
+         <!-- box 4 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="imag/Kaanekkaane_Movie_review_Sony_LIV_Tovino_Thomas_Suraj_Venjaramoodu.webp" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min | Action</span>
+        </div>
+         <!-- box 5 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="imag/MV5BNzM1ODcyZmEtODViMC00YWM3LWFiNzMtZTFjYzMyMzU5OWJmXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_.jpg" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min | Action</span>
+        </div>
+         <!-- box 6 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="imag/MV5BZDY4MDJiN2MtNDk1OS00YjlhLTk4MTItMTlhOWZhODJjMDgyXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min |Action</span>
+        </div>
+         <!-- box 7 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="imag/Tovino-Thomas-is-all-cool-and-funky-in-the-new-poster-of-his-film-Thallumaala-1.jpg" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min |Action</span>
+        </div>
+         <!-- box 8 -->
+        <div class="box">
+            <div class="box-img">
+               <a href="#">
+                <img src="imag/Where-To-Watch-These-6-Must-Watch-Tovino-Thomas-Films.jpg" alt="">
+               </a>
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min |Action</span>
+        </div>
+         <!-- box 9 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="imag/image.jpg" alt="">
+            </div>
+            <h3>Tovino</h3>
+            <span>120 min | Action</span>
+        </div>
+    </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <h2>Movies search To Get <br>Newsletter</h2>
+        <form action="">
+            <input type="email"class="email" placeholder="Enter Email..." required>
+            <input type="submit" value="Movies search" class="btn">
+        </form>
+    </section>
+    <section class="footer">
+        <a href="#" class="logo">
+            <ion-icon name="film-outline" style="color: rgb(51, 24, 227);"></ion-icon>MOVIES
+           
+        </a>
+        <div class="social">
+          <a href="#">
+            <ion-icon name="logo-facebook" class="bx bxl-facebook"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram"  class="bx bxl-instagram"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-twitter"  class="bx bxl-twitter"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-whatsapp"  class="bx bxl-whatsapp"></ion-icon>
+          </a>
+        </div>
+    </section>
+       <div class="copyright">
+           <p>&#169; CarpoolVenom All Right Reserved</p>
+       </div>
+       
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
